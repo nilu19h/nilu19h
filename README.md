@@ -1,2 +1,1 @@
-- Hi, I’m NIHAL
-- 
+NIHAL 
