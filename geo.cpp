@@ -19,5 +19,16 @@ int main() {
         cin >> p[i].x >> p[i].y;
     }
 
-    
+    for(int i = 0; i < n; ++i) {
+        int answer = 1;
+        int best = 0;
+        for(int j = 0; j < n; ++j) {
+            double tmp = dist(p[i].x, p[i].y, p[j].x, p[j].y);
+            if(tmp > best) {
+                answer = j;
+                best = tmp;
+            }
+        }
+        cout << answer;
+    }
 }
