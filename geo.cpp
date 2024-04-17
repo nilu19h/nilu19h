@@ -3,13 +3,13 @@ using namespace std;
 
 struct P {
     int x, y;
-    void read() {
-        cin >> x >> y;
-    }
 };
 
 int main() {
     int n;
     cin >> n;
-    
+    vector<P> p;
+    for(int i = 0; i < n; ++i) {
+        cin >> p[i].x >> p[i].y;
+    }
 }
