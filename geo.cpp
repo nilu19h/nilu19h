@@ -17,7 +17,7 @@ double dist(int x1, int y1, int x2, int y2) {
 int main() {
     int n;
     cin >> n;
-    vector<P> p;
+    vector<P> p(n);
     for(int i = 0; i < n; ++i) {
         cin >> p[i].x >> p[i].y;
     }
