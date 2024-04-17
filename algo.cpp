@@ -1,17 +1,23 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-    int n;
-    cin >> n;
-    while(n != 1) {
-        cout << n << " ";
-        if(n % 2 == 0) {
-            n /= 2;
-        }
-        else {
-            n = 3 * n + 1;
-        }
+void rec(int k) {
+    vector<int> subset;
+    if(k == n) {
+        // process subset
     }
-    cout << 1;
+    else {
+        rec(k + 1);
+        subset.push_back(k);
+        rec(k + 1);
+        subset.pop_back();
+    }
+    for(int x : subset) {
+        cout << x << " ";
+    }
+    cout << endl;
+}
+
+int main() {
+
 }
