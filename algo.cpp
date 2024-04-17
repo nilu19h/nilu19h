@@ -11,12 +11,10 @@
 
   - Depth-First Search
     
-    
 */
-
 #include <iostream>
 #include <vector>
-
+/*
 const int nax = 10;
 vector<int> edges[nax];
 bool vis[n];
@@ -30,7 +28,17 @@ void dfs(int a) {
         dfs(b);
     }
 }
+*/
+
+void dfs(int a, int par) {
+    for(int b : edges[a]) {
+        if(a != par) {
+            dfs(b);
+        }
+    }
+}
 
 int main() {
-    
+    dfs(0, -1);
 }
+
