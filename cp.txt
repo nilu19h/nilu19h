@@ -1,4 +1,4 @@
-competitive programmers handbook
+competitive programmer's handbook
 
 I) Basic techniques
   1. Introduction
