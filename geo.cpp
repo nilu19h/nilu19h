@@ -1,4 +1,7 @@
 #include <iostream>
+#include <math.h>
+#include <vector>
+
 using namespace std;
 
 struct P {
@@ -25,10 +28,10 @@ int main() {
         for(int j = 0; j < n; ++j) {
             double tmp = dist(p[i].x, p[i].y, p[j].x, p[j].y);
             if(tmp > best) {
-                answer = j;
+                answer = j + 1;
                 best = tmp;
             }
         }
-        cout << answer;
+        cout << answer << endl;
     }
 }
