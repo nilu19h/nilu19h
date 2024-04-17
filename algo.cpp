@@ -13,3 +13,24 @@
     
     
 */
+
+#include <iostream>
+#include <vector>
+
+const int nax = 10;
+vector<int> edges[nax];
+bool vis[n];
+
+void dfs(int a) {
+    if(vis[a]) {
+        return;
+    }
+    vis[a] = true;
+    for(int b : edges[a]) {
+        dfs(b);
+    }
+}
+
+int main() {
+    
+}
