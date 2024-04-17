@@ -19,5 +19,5 @@ void rec(int k) {
 }
 
 int main() {
-
+    rec(0);
 }
