@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-int n;
+int n = 3;
 
 void rec(int k) {
     vector<int> subset;
@@ -22,6 +22,6 @@ void rec(int k) {
 }
 
 int main() {
-    cin >> n;
+    // cin >> n;
     rec(0);
 }
