@@ -2,6 +2,8 @@
 #include <vector>
 using namespace std;
 
+int n;
+
 void rec(int k) {
     vector<int> subset;
     if(k == n) {
@@ -20,5 +22,6 @@ void rec(int k) {
 }
 
 int main() {
+    cin >> n;
     rec(0);
 }
